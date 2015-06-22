@@ -1,0 +1,24 @@
+<div class="row line">
+  <h4>Invernaculos</h4>
+  <div class="col-sm-4" ng-repeat="house in houses">
+    <div class="panel panel-default" ng-click="viewDetail(hose)">
+      <div class="panel-heading">{{house.name}}</div>
+      <div class="panel-body">
+        <ul class="plain-list">
+          <li ng-class="{'text-danger': house.alerts.temp}"> Temperatura amb. {{house.temp}}&deg </li>
+          <li ng-class="{'text-danger': house.alerts.light}"> Intesidad luz {{house.light}}kL </li>
+          <li ng-class="{'text-danger': house.alerts.soil}"> Humedad suelo {{house.soil}}% </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div> <!-- row line-->
+
+<div class="row alerts">
+  <h4>&Uacute;ltimas alertas:</h4>
+    <ul class="alerts">
+      <li> Modulo 1B : Temperatura 18&deg; a las 22:20hs</li>
+      <li> Modulo 1C : Humedad del suelo 20% a las 07:20hs</li>
+    </ul>
+</div>

@@ -1,0 +1,21 @@
+ul.plain-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.alerts {
+	list-style-type: none;
+}
+
+.line.spacer {
+	padding-top: 10%;
+}
+
+.page-header {
+	margin-top: 20px;
+}
+
+.chart-container {
+	max-height: 50%;
+}
